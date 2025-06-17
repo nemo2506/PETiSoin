@@ -56,7 +56,7 @@ N’hésitez pas à contribuer à l’amélioration de PETiSoin, que ce soit en 
 ## 📫 Contact
 
 Pour toute question ou suggestion :  
-✉️ email@example.com (à adapter)  
+✉️ +33 1 80 88 80 30
 
 ---
 
