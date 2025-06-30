@@ -1,4 +1,4 @@
-package com.openclassrooms.petisoin.data.entity.converter
+package com.openclassrooms.petisoin.data.converter
 
 import androidx.room.TypeConverter
 import java.util.Date
