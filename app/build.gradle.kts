@@ -5,6 +5,7 @@ plugins {
   //application des plugin gradle
   alias(libs.plugins.ksp)
   alias(libs.plugins.room)
+  alias(libs.plugins.hilt)
 }
 
 android {
@@ -12,7 +13,7 @@ android {
   compileSdk = 34
 
   defaultConfig {
-    applicationId = "com.openclasspetisoins.petitsoin"
+    applicationId = "com.openclassrooms.petisoin"
     minSdk = 24
     targetSdk = 34
     versionCode = 1
@@ -38,10 +39,7 @@ android {
     jvmTarget = "1.8"
   }
   buildFeatures {
-    compose = true
-  }
-  composeOptions {
-    kotlinCompilerExtensionVersion = "1.5.13"
+    viewBinding = true
   }
   packaging {
     resources {
@@ -49,7 +47,7 @@ android {
     }
   }
 
-  //Configuration du plugin gradle de petitsoin
+  //Configuration du plugin gradle de room
   room {
     schemaDirectory("$projectDir/schemas")
   }
@@ -66,6 +64,9 @@ dependencies {
   implementation(libs.androidx.ui.graphics)
   implementation(libs.androidx.ui.tooling.preview)
   implementation(libs.androidx.material3)
+  implementation(libs.androidx.appcompat)
+  implementation(libs.material)
+  implementation(libs.androidx.activity)
   implementation(libs.androidx.constraintlayout)
   testImplementation(libs.junit)
   androidTestImplementation(libs.androidx.junit)
@@ -82,4 +83,8 @@ dependencies {
 
   //ajout de la dépendance Turbine
   androidTestImplementation(libs.turbine)
+
+  //ajout de hilt
+  implementation(libs.hilt.android)
+  ksp(libs.hilt.compiler)
 }

@@ -8,12 +8,20 @@ espressoCore = "3.5.1"
 lifecycleRuntimeKtx = "2.8.1"
 activityCompose = "1.9.0"
 composeBom = "2024.05.00"
-constraintlayout = "2.1.4"
+
 #Déclaration des versions de Room et de KSP
 room = "2.6.1"
 ksp = "1.9.23-1.0.20"
+
 #Déclaration de la version de Turbine
 turbine = "1.1.0"
+
+#Déclaration de la version de Hilt
+hilt = "2.51.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,13 +38,23 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+#Ajout de la dépendance Turbine
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+
 #Ajout des dépendances Room
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
-#Ajout de la dépendance Turbine
-turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+
+#Ajout de Hilt
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt"}
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt"}
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
@@ -44,4 +62,7 @@ jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = 
 #Ajout des plugins Room et KSP
 room = { id = "androidx.room", version.ref = "room" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+#Ajout de hilt
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 

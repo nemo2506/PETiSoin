@@ -185,4 +185,74 @@ class VaccineDaoTest {
             cancelAndIgnoreRemainingEvents()
         }
     }
+
+      @Test
+  fun testShouldUpdateVaccineIntoDatabaseSuccessfully() = runTest {
+    //We first insert an animal
+    val animal = Animal(
+      id = 1,
+      type = Type.CAT,
+      race = Race.PERSIAN,
+      weight = 12.0,
+      height = 120,
+      color = "black"
+    )
+
+    database.animalDao().addAnimal(animal)
+
+    //then a vaccine
+    var vaccine = Vaccine(
+      id = 1,
+      name = "leucose",
+      injectionDate = Date(),
+      animalId = 1
+    )
+
+    database.vaccineDao().addVaccine(vaccine)
+
+    //Update the date with Monday 8 January 2024 21:26:38
+    vaccine = vaccine.copy(injectionDate = Date(1704749198 * 1000L))
+
+    database.vaccineDao().addVaccine(vaccine)
+
+    database.vaccineDao().getAllVaccinesByAnimalId(1).test {
+      val updatedVaccine = awaitItem()
+      assertEquals(1, updatedVaccine.size)
+      assertEquals(vaccine, updatedVaccine[0])
+      cancel()
+    }
+  }
+
+  @Test
+  fun testShouldDeleteVaccineFromDatabaseSuccessfully() = runTest {
+    //We first insert an animal
+    val animal = Animal(
+      id = 1,
+      type = Type.CAT,
+      race = Race.PERSIAN,
+      weight = 12.0,
+      height = 120,
+      color = "black"
+    )
+
+    database.animalDao().addAnimal(animal)
+
+    //then a vaccine
+    val vaccine = Vaccine(
+      id = 1,
+      name = "leucose",
+      injectionDate = Date(),
+      animalId = 1
+    )
+
+    database.vaccineDao().addVaccine(vaccine)
+
+    database.vaccineDao().deleteVaccine(vaccine)
+
+    database.vaccineDao().getAllVaccinesByAnimalId(1).test {
+      val deletedVaccine = awaitItem()
+      assertTrue(deletedVaccine.isEmpty())
+      cancel()
+    }
+  }
 }
