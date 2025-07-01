@@ -1,78 +1,76 @@
+# 📱 Projet Android : Gestion de données locales avec ROOM 🧠
 
-<<<<<<< HEAD
-Bienvenue dans ce projet !  
-Imaginez pouvoir créer des applications Android **totalement autonomes**, sans dépendance à une connexion Internet.  
-Ce cours vous offre la possibilité de découvrir comment **gérer efficacement vos données localement** grâce à l'outil **Room**.
-
-📦 Vous apprendrez à :
-- stocker et organiser vos données de manière optimale,
-- structurer vos projets efficacement,
-- mettre en œuvre des solutions robustes et performantes.
-
-<<<<<<< HEAD
-Que vous soyez **débutant** ou **développeur expérimenté**, ce cours transformera votre manière de concevoir des applications Android modernes.
+> **🎯 Objectif :** Développer une application Android 100 % hors-ligne grâce à Room, LiveData/Flow, ViewModel et le Repository Pattern.  
+> Prêt·e à passer au **niveau supérieur** ? C’est parti ! 🚀
 
 ---
 
-## ✅ Prérequis
+## 🤔 Qu’allez-vous apprendre dans ce projet ?  
 
-Pour suivre ce cours, vous devez maîtriser les compétences suivantes :
+🧩 Vous maîtrisez maintenant les bases du développement mobile en **Kotlin et Java**, en **POO** et **MVVM**, ainsi que la **modélisation des bases de données**.  
+✨ Il est temps de passer à la suite !
 
-- 👨‍💻 Bases du langage **Kotlin** ou **Java**
-- 🧠 Connaissances de l'architecture **MVVM**
-- 📊 Bases de la **modélisation de données**
-- 🌐 Savoir utiliser **GitHub**
+📚 Ce projet vous permettra d'approfondir vos compétences Android avec :
 
-### 🔁 Recommandé avant ce cours :
+- 🏛️ **Room**, une bibliothèque ORM intuitive pour interagir avec SQLite 📦  
+- 🗂️ **Entities** : vos futures tables en version Kotlin  
+- 🔄 **DAO (Data Access Object)** : pour manipuler efficacement vos données  
+- 🔔 **LiveData / Flow** : pour observer et exposer vos données comme un·e pro  
+- 🧠 **ViewModel** & **Repository Pattern** : pour garder vos données stables même quand l'écran pivote 📱🔄
 
-- [ ] 🏗 **Développez votre première application Android**
-- [ ] 🧱 **Modélisez vos bases de données**
-- [ ] 🗃 **Gérez du code avec Git et GitHub**
-
-### 🛠 Outils nécessaires :
-
-- 🧰 Environnement de développement : **Android Studio**
-- 🧩 Bibliothèque : **Room**
-- 🔧 Contrôle de version : **GitHub**
-=======
-Que vous soyez **débutant** ou **développeur expérimenté** cherchant à améliorer vos compétences, ce cours transformera votre approche de la gestion des données sur Android.  
-🔥 Vous apprendrez à concevoir des applications modernes, performantes et **indépendantes du réseau**.
->>>>>>> entity
+🧪 À la fin, vous aurez conçu une app **100 % hors-ligne** avec une gestion complète des données locales ! 🏁
 
 ---
 
-## 🎯 Objectifs pédagogiques
+## 💼 En quoi ces compétences sont-elles utiles pour votre carrière ?  
 
-À la fin de ce cours, vous serez capable de :
+⚡ Dans le monde du développement Android, savoir gérer des bases de données locales, **c’est la base** !  
+Cela permet de créer des applications :
 
-<<<<<<< HEAD
-✅ Analyser les données et les solutions de stockage  
-✅ Préparer votre base de données locale avec Room  
-✅ Organiser et configurer votre base de données locale avec Room  
-✅ Tester et finaliser votre application  
-=======
-✅ analyser les données et les solutions de stockage  
-✅ préparer votre base de données locale avec Room  
-✅ organiser et configurer votre base de données locale avec Room  
-✅ tester et finaliser votre application  
->>>>>>> entity
+- 🔐 Sécurisées & respectueuses de la vie privée  
+- 🌍 Indépendantes du réseau  
+- ⚙️ Optimisées et performantes  
 
----
+🎯 Ces compétences sont **très recherchées** dans les rôles suivants :
 
-## 📚 Exercices
-
-- [ ] Créer une entité Room `User` avec 3 champs (id, nom, email)  
-- [ ] Mettre en place un DAO pour gérer les opérations CRUD  
-- [ ] Intégrer Room à une `ViewModel` et afficher les données dans un `RecyclerView`  
-<<<<<<< HEAD
--
-=======
-- [ ] Implémenter un test unitaire pour vérifier l’insertion d’un élément  
+- Développeur·se Android 👩‍💻👨‍💻  
+- Ingénieur·e logiciel mobile 🛠️  
+- Architecte d’application 📐
 
 ---
 
-✨ **Prêt à plonger dans l'univers du développement mobile Android ?**  
-Déployez vos connaissances et développez des applications puissantes avec Room et Jetpack 🔧
->>>>>>> entity
-=======
->>>>>>> f6d2958357bee22c708225124c2072519b8168cd
+## 🧭 Comment allez-vous procéder ?
+
+📚 **Cours**  
+Commencez avec le cours _“Gérez vos données localement pour avoir une application 100 % hors-ligne”_  
+➡️ Vous comprendrez comment la gestion locale améliore l’expérience utilisateur.
+
+⚗️ **Exercice**  
+Appliquez vos connaissances avec :  
+🩺 _“Gérez vos données locales de santé”_  
+🎯 Objectif : Créer une base Room pour une application de **suivi de santé**.
+
+🧑‍🏫 **Session mentor**  
+À la fin du projet, vous aurez une session de bilan avec votre mentor 🧙  
+📦 Vous préparerez aussi vos **livrables** (voir la section dédiée).
+
+---
+
+## 🎓 Objectifs pédagogiques
+
+✅ Utiliser **Room** pour accéder à des données locales  
+✅ Maîtriser **DAO**, **Entity**, **ViewModel** et **Repository Pattern**  
+✅ Gérer des données observables avec **LiveData** ou **Flow**  
+✅ Créer une application Android **hors-ligne** et **robuste**
+
+---
+
+## 🚀 Prêt·e à démarrer ?
+
+👉 Lancez-vous dans la première section du cours :  
+**"📘 Gérez vos données localement pour avoir une application 100 % hors-ligne"**
+
+Bonne aventure développeur·se ! 🧑‍💻🍀
+
+---
+
