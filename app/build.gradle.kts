@@ -79,4 +79,7 @@ dependencies {
   implementation(libs.room.runtime)
   implementation(libs.room.ktx)
   ksp(libs.room.compiler)
+
+  //ajout de la dépendance Turbine
+  androidTestImplementation(libs.turbine)
 }
