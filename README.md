@@ -1,5 +1,5 @@
-# 📱 Développement Android avec Room — Gestion locale des données
 
+<<<<<<< HEAD
 Bienvenue dans ce projet !  
 Imaginez pouvoir créer des applications Android **totalement autonomes**, sans dépendance à une connexion Internet.  
 Ce cours vous offre la possibilité de découvrir comment **gérer efficacement vos données localement** grâce à l'outil **Room**.
@@ -74,3 +74,5 @@ Que vous soyez **débutant** ou **développeur expérimenté** cherchant à amé
 ✨ **Prêt à plonger dans l'univers du développement mobile Android ?**  
 Déployez vos connaissances et développez des applications puissantes avec Room et Jetpack 🔧
 >>>>>>> entity
+=======
+>>>>>>> f6d2958357bee22c708225124c2072519b8168cd
